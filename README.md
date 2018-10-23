@@ -4,7 +4,7 @@ JavaScript utility that allows you to auto delete all your Facebook messages. Ad
 
 > !function(e){var t=function(){null!==e('div[aria-label="Conversation actions"]')?(e('div[aria-label="Conversation actions"]').click(),setTimeout(n,200)):o()},n=function(){for(var e=document.evaluate('//span[text()="Delete"]',document,null,XPathResult.ORDERED_NODE_SNAPSHOT_TYPE,null),t=0;t<e.snapshotLength;t++)e.snapshotItem(t).click();setTimeout(l,1e3)},l=function(){document.evaluate("//button[contains(text(),'Delete')]",document,null,XPathResult.FIRST_ORDERED_NODE_TYPE,null).singleNodeValue.click(),setTimeout(t,1e3)},o=function(){var e=document.evaluate("//a[contains(text(),'Show Older')]",document,null,XPathResult.FIRST_ORDERED_NODE_TYPE,null).singleNodeValue;e?(e.click(),setTimeout(t,2e3)):console.log("All Messages has been deleted")};console.log("Deleting all Facebook messages..."),t()}(function(e){return document.querySelector(e)});
 
-*The code above is just a minified version of the delete-fb-messages.js file, but make sure the URL of the bookmark is exactly the code above. No http:// or www.*
+*The code above is just a minified version of the facebook_delete_message.js file
 
 
 * * *
