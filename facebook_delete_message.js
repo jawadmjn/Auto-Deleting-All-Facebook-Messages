@@ -26,7 +26,7 @@
    var matchingElement = document.evaluate(el, document, null, XPathResult.FIRST_ORDERED_NODE_TYPE, null).singleNodeValue;
    if(matchingElement) {
     matchingElement.click();
-    setTimeout(stepOne, 2000);
+    setTimeout(stepOne, 3000);
    }
    else {
     console.log('All Messages has been deleted');
